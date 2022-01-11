@@ -1,0 +1,12 @@
+[programs.localnet]
+intro_to_anchor = "239rsPQYmP9hMc3WL1RhgsbbCV48zAYV6cPNpVTuaf3D"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "localnet"
+wallet = "/Users/grayfox/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"

@@ -1,0 +1,15 @@
+# mac files
+.DS_Store
+
+# node files
+node_modules/
+dist/
+
+# local solana ledger
+test-ledger/
+
+# anchor
+target/
+.anchor
+tests/*/Cargo.lock
+tests/**/Cargo.lock
