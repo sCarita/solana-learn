@@ -13,6 +13,7 @@
         "build": "anchor build",
         "deploy": "anchor deploy",
         "test": "anchor test",
+	"solana-net": "solana-test-validator",
         "client": "ANCHOR_PROVIDER_URL=http://127.0.0.1:8899 ANCHOR_WALLET=$(solana config get keypair --output json-compact | sed -n -e 's/^.*Key Path: //p' | xargs) node app/client.js" 
     }
 }
