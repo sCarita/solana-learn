@@ -11,6 +11,9 @@ describe('intro-to-anchor', () => {
 		***************
 		INITIALISE - Provider, Program and Keypair
 		***************
+
+		TODO: Should exist other way to get the program client without
+		importing the IDL + ProgramId. [Ask Tim]
 	*/
   // Configure the client to use the local cluster.
   const provider = anchor.Provider.env();
