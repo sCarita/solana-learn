@@ -8,9 +8,9 @@ describe('intro-to-anchor', () => {
 
 
 	/*
-		***************
-		INITIALISE - Provider, Program and Keypair
-		***************
+	***************
+	INITIALISE - Provider, Program and Keypair
+	***************
 
 		TODO: Should exist other way to get the program client without
 		importing the IDL + ProgramId. [Ask Tim]
@@ -36,10 +36,10 @@ describe('intro-to-anchor', () => {
 
 
 	/*
-		***************
-		TEST 00 - Creates and initializes an account in a single atomic transaction
-		(simplified).
-		***************
+	***************
+	TEST 00 - Creates and initializes an account in a single atomic transaction
+	(simplified).
+	***************
 	*/
 	it("Creates and initializes an account in a single atomic transaction (simplified)", async () => {
 	  const tx = await program.rpc.initialize(new anchor.BN(1234), {
@@ -61,9 +61,9 @@ describe('intro-to-anchor', () => {
 
 
 	/*
-		***************
-		TEST 01 - Updates a previously created account.
-		***************
+	***************
+	TEST 01 - Updates a previously created account.
+	***************
 	*/
 	it("Updates a previously created account", async () => {
     // Invoke the update rpc.
